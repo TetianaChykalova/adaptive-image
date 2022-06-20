@@ -43,13 +43,13 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 
 body {
     background: #ffdd00;
-    padding: 10px;
+    padding: 20px;
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    margin: 0 -5px 10px;
+    margin: 0 -5px 30px;
 }
 .row__item {
     display: flex;
@@ -59,6 +59,7 @@ body {
     padding: 0 5px;
 }
 .item-image {
+    margin: 0 0 5px 0;
     height: 200px;
     overflow: hidden;
 }
@@ -66,4 +67,34 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.column__item {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    margin: 0 0 5px 0;
+}
+.column-image {
+    flex: 0 1 50%;
+    margin: 0 5px 0 0;
+    position: relative;
+    min-height: 150px;
+    /*overflow: hidden;*/
+
+}
+.column-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.column__item p {
+    /*flex: 0 1 50%;*/
 }
