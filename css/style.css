@@ -43,13 +43,27 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 
 body {
     background: #ffdd00;
+    padding: 10px;
 }
 
 .row {
     display: flex;
     flex-direction: row;
+    margin: 0 -5px 10px;
 }
 .row__item {
     display: flex;
     flex-direction: column;
+    flex: 0 1 33.333%;
+    max-width: 33.333%;
+    padding: 0 5px;
+}
+.item-image {
+    height: 200px;
+    overflow: hidden;
+}
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
